@@ -1,0 +1,25 @@
+1.ID: 1
+
+2.Title: Test the autocomplete functionality;
+
+3.Priority: high;
+
+4.Description: the test verifies if the autocomplete functionality works;
+
+5.Preconditions: internet connection,latest browser version, website address;
+
+6.Test data: address, street address, street address 2, city, state, zip code, country;
+
+7.Test steps:
+A. Enter the website;
+B. Go to "Autocomplete" page;
+C. Enter "Bucharest" in address field;
+D. Check if Google Maps finds "Bucharest";
+
+8. Expected results:
+The data had been introduced and recognized by Google Maps.
+
+9. Actual results:
+'Bucharest' was not found in the "Address" field by Google Maps.
+
+
