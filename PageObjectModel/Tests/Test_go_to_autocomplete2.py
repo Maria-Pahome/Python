@@ -12,7 +12,7 @@ from PageObjectModel.Pages.Home import Home
 class GoToAutocomplete2(unittest.TestCase):
     def setUp(self) -> None:
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        # self.driver = webdriver.Chrome("C:/Users/Maria/PycharmProjects/QA_Practice_Python/Page_O_M/Resources"
+        # self.driver = webdriver.Chrome("C:/Users/Maria/PycharmProjects/QA_Practice_Python/PageObjectModel/Resources"
         #                                "/chromedriver.exe")
         self.driver.get("http://formy-project.herokuapp.com/")
 

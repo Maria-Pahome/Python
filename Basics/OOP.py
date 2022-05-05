@@ -138,3 +138,7 @@ class Bus(Vehicle):
 School_bus = Bus("School Volvo", 12, 50)
 x = isinstance(School_bus, Vehicle)
 print(x)
+
+const numbers = [1, 2, 3];
+numbers[5] = 11;
+console.log(numbers);

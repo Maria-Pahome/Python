@@ -213,7 +213,7 @@ def right_triangle():
 
 def half_pyramid_star():
     rows7 = 9
-    for i in range(rows7+ 1, 0, -1):
+    for i in range(rows7 + 1, 0, -1):
         for j in range(0, i - 1):
             print('* ', end=' ')
         print(" ")
@@ -306,3 +306,7 @@ def exponent(base, exp):
 
 exponent(5, 4)
 exponent(2, 5)
+
+print('----Till the end of the journey---- 😀')
+
+
