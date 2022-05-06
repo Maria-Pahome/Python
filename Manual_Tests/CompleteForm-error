@@ -1,0 +1,28 @@
+1.ID: 2;
+
+2.Title: Test redio-button deselection;
+
+3.Priority: high;
+
+4.Severity: medium;
+
+5.Description: the test verifies if the radio-buttons can be deselected;
+
+6.Preconditions: internet connection,latest browser version, website address;
+
+7.Test data: radio buttons;
+
+8. Steps to reproduce:
+A. Enter the website;
+B. Go to "Complete Web page" page;
+C. Select radio button "High School";
+D. Select radio button "College";
+E. Uncheck radio button "High School" and "College";
+
+
+9. Expected results:
+The "High School" and "College" radio buttons are unchecked.
+
+10. Actual results:
+"High School" and "College" radio buttons cannot be deselected .
+
