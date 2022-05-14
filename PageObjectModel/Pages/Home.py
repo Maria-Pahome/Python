@@ -31,3 +31,6 @@ class Home(Base):
         self._driver.find_element(*self.BUTTONS).click()
         print("We'll go to buttons page.")
 
+    def click_on_CWF(self):
+        self._driver.find_element(*self.COMPLETE).click()
+        print("We'll go to Complete Web Form page.")

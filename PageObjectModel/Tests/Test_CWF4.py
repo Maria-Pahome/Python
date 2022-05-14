@@ -2,8 +2,9 @@ import time
 import unittest
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+
+from PageObjectModel.Pages.CompleteWebForm import CompleteWebForm
 
 
 class CompleteWF4(unittest.TestCase):
@@ -12,11 +13,12 @@ class CompleteWF4(unittest.TestCase):
         self.driver.get("http://formy-project.herokuapp.com/form")
 
     def test_CWF4(self):
+        completed = CompleteWebForm(self.driver)
+        completed.level_ed1()
         time.sleep(2)
-        self.driver.find_element(By.ID, "radio-button-1").click()
-        time.sleep(2)
-        result = self.driver.find_element(By.ID, "radio-button-1").click()
+        result = completed.level_ed1()
         self.assertIsNotNone(result, "This is a bug!")
 
     def tearDown(self) -> None:
         self.driver.quit()
+

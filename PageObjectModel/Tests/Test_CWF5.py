@@ -3,22 +3,28 @@ import time
 import unittest
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+
+from PageObjectModel.Pages.CompleteWebForm import CompleteWebForm
+from PageObjectModel.Pages.Home import Home
 
 
 class CompleteWF5(unittest.TestCase):
     def setUp(self) -> None:
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        self.driver.get("http://formy-project.herokuapp.com/form")
+        self.driver.get("http://formy-project.herokuapp.com")
 
     def gender_check(self):
+        home = Home(self.driver)
+        completed = CompleteWebForm(self.driver)
         time.sleep(2)
-        self.driver.find_element(By.ID, "checkbox-1").click()
+        home.click_on_CWF()
         time.sleep(2)
-        self.driver.find_element(By.ID, "checkbox-2").click()
+        completed.gender1()
         time.sleep(2)
-        self.driver.find_element(By.ID, "checkbox-3").click()
+        completed.gender2()
+        time.sleep(2)
+        completed.gender3()
         time.sleep(2)
 
     def tearDown(self) -> None:

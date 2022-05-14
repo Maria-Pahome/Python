@@ -5,6 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from PageObjectModel.Pages.Buttons import Buttons
 
+
 def click_on_all_buttons():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get("http://formy-project.herokuapp.com/buttons")
@@ -35,3 +36,4 @@ def click_on_all_buttons():
 
 if __name__ == '__main__':
     click_on_all_buttons()
+
